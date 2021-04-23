@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { DatatableComponent } from './componenets/datatable/datatable.component';
+import { SweetAlert2Module } from "@sweetalert2/ngx-sweetalert2";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DatatableComponent } from './componenets/datatable/datatable.component'
   imports: [
     BrowserModule,
     DataTablesModule,
-    HttpClientModule
+    HttpClientModule,
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
